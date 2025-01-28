@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage("Clone Code from GitHub"){
             steps{
+                echo "This CICD pipeline is triggered from GitHub"
                 echo "This is Code Phase"
                 git url: "https://github.com/meeraparigi/DevSecOps-Wanderlust.git", branch: "devops"
             }
